@@ -8,7 +8,7 @@ const Container = ({ children, className }: Props) => {
   return (
     <div
       className={cn(
-        "max-w-6xl mx-auto bg-white dark:bg-black p-4 md:p-10",
+        "max-w-6xl mx-auto bg-white dark:bg-black p-4 md:p-6",
         className,
       )}
     >
