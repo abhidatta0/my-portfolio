@@ -5,6 +5,8 @@ layer(base);
 @theme {
   --font-*: initial;
   --font-sans: Kanit, Arial, sans-serif;
+
+  --color-primary: var(--color-cyan-400)
 }
 
 /*

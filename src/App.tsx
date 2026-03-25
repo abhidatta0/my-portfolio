@@ -1,24 +1,7 @@
 import Container from "@/components/Container";
 import Navbar from "@/components/Navbar";
-import { motion } from "motion/react";
-
-const SectionWrapper = ({
-  children,
-  id,
-}: {
-  children: React.ReactNode;
-  id: string;
-}) => (
-  <motion.section
-    id={id}
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.6 }}
-  >
-    {children}
-  </motion.section>
-);
+import SectionWrapper from "@/components/SectionWrapper";
+import { TECH_STACK } from "@/constants/techstacks";
 
 const App = () => {
   return (
@@ -26,7 +9,7 @@ const App = () => {
       <Navbar />
       <Container className="min-h-screen">
         <SectionWrapper id="about">
-          <h1 className="text-5xl font-bold mb-6 bg-linear-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+          <h1 className="text-5xl font-bold mb-6 bg-linear-to-r from-primary to-blue-500 bg-clip-text text-transparent">
             Hi, I am Abhirup
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl leading-relaxed">
@@ -35,6 +18,20 @@ const App = () => {
             Passionate about developer experience, clean component architecture,
             and delivering measurable impact through technology.
           </p>
+        </SectionWrapper>
+
+        <SectionWrapper id="tech">
+          <h2 className="text-3xl font-bold mb-8 text-primary">Technologies</h2>
+          <div className="flex flex-wrap gap-3">
+            {TECH_STACK.map((tech) => (
+              <span
+                key={tech.name}
+                className="px-4 py-2 bg-slate-900 border border-slate-800 rounded-full text-primary text-sm"
+              >
+                {tech.name}
+              </span>
+            ))}
+          </div>
         </SectionWrapper>
       </Container>
     </div>
