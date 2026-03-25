@@ -1,7 +1,7 @@
 import Container from "@/components/Container";
 import Navbar from "@/components/Navbar";
 import SectionWrapper from "@/components/SectionWrapper";
-import { TECH_STACK } from "@/constants/techstacks";
+import Technologies from "@/Technologies";
 
 const App = () => {
   return (
@@ -21,17 +21,7 @@ const App = () => {
         </SectionWrapper>
 
         <SectionWrapper id="tech">
-          <h2 className="text-3xl font-bold mb-8 text-primary">Technologies</h2>
-          <div className="flex flex-wrap gap-3">
-            {TECH_STACK.map((tech) => (
-              <span
-                key={tech.name}
-                className="px-4 py-2 bg-slate-900 border border-slate-800 rounded-full text-primary text-sm"
-              >
-                {tech.name}
-              </span>
-            ))}
-          </div>
+          <Technologies />
         </SectionWrapper>
       </Container>
     </div>
