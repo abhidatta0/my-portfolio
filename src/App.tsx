@@ -6,14 +6,11 @@ import Technologies from "@/Technologies";
 
 const App = () => {
   return (
-    <div className="bg-slate-950 text-slate-100 min-h-screen font-sans selection:bg-cyan-500/30">
-      <Navbar />
+    <div className="bg-primary/10 text-slate-100 min-h-screen font-sans selection:bg-cyan-500/30">
       <Container className="min-h-screen">
+        <Navbar />
         <SectionWrapper id="about">
-          <h1 className="text-5xl font-bold mb-6 bg-linear-to-r from-primary to-blue-500 bg-clip-text text-transparent">
-            Hi, I am Abhirup
-          </h1>
-          <p className="text-xl text-slate-400 max-w-2xl leading-relaxed">
+          <p className="md:text-xl text-sm text-slate-400 max-w-2xl leading-relaxed">
             I am a results-driven Software Engineer with 6+ years of experience
             building scalable, high-performance web and mobile applications.
             Passionate about developer experience, clean component architecture,

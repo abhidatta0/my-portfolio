@@ -1,14 +1,9 @@
 import Container from "@/components/Container";
 
 const Navbar = () => {
-  const navItems = [
-    { title: "About", href: "/about" },
-    { title: "Projects", href: "/projects" },
-    { title: "Contact", href: "/contact" },
-  ];
   return (
-    <Container>
-      <nav className="flex items-center justify-between">
+    <Container className="md:p-0">
+      <nav className="flex justify-ce flex-row md:flex-col gap-3 md:items-start items-center">
         <img
           src="/my-photo.png"
           height={"100"}
@@ -16,13 +11,9 @@ const Navbar = () => {
           alt="avatar"
           className="size-15 rounded-full object-cover"
         />
-        <div className="flex items-center gap-2">
-          {navItems.map((item) => (
-            <a href={item.href} key={item.title} className="text-sm">
-              {item.title}
-            </a>
-          ))}
-        </div>
+        <h1 className="text-3xl md:text-5xl font-bold bg-linear-to-r from-primary to-blue-500 bg-clip-text text-transparent">
+          Hi, I am Abhirup
+        </h1>
       </nav>
     </Container>
   );
