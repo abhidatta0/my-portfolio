@@ -2,11 +2,13 @@ import Container from "@/components/Container";
 import Navbar from "@/components/Navbar";
 import SectionWrapper from "@/components/SectionWrapper";
 import Portfolio from "@/Portfolio";
+import SocialSidebar from "@/SocialSidebar";
 import Technologies from "@/Technologies";
 
 const App = () => {
   return (
     <div className="bg-primary/10 text-slate-100 min-h-screen font-sans selection:bg-cyan-500/30">
+      <SocialSidebar />
       <Container className="min-h-screen">
         <Navbar />
         <SectionWrapper id="about">
