@@ -1,6 +1,7 @@
 import Container from "@/components/Container";
 import Navbar from "@/components/Navbar";
 import SectionWrapper from "@/components/SectionWrapper";
+import Portfolio from "@/Portfolio";
 import Technologies from "@/Technologies";
 
 const App = () => {
@@ -21,7 +22,13 @@ const App = () => {
         </SectionWrapper>
 
         <SectionWrapper id="tech">
+          <h2 className="text-3xl font-bold mb-8 text-primary">Technologies</h2>
           <Technologies />
+        </SectionWrapper>
+
+        <SectionWrapper id="projects">
+          <h2 className="text-3xl font-bold mb-8 text-primary">Projects</h2>
+          <Portfolio />
         </SectionWrapper>
       </Container>
     </div>

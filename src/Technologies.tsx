@@ -3,7 +3,6 @@ import { TECH_STACK } from "@/constants/techstacks";
 const Technologies = () => {
   return (
     <div>
-      <h2 className="text-3xl font-bold mb-8 text-primary">Technologies</h2>
       <div className="flex flex-wrap gap-3">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {TECH_STACK.map((tech, idx) => {
