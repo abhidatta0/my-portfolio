@@ -7,7 +7,7 @@ const SocialSidebar = () => {
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 1 }}
-      className="fixed left-6 bottom-0 hidden lg:flex flex-col gap-6 after:h-24 after:mx-auto"
+      className="lg:fixed lg:left-6 lg:bottom-6 bottom-0 flex flex-row justify-center items-center lg:flex lg:flex-col gap-6"
     >
       <a
         href="https://github.com/abhidatta0"

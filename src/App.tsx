@@ -8,7 +8,6 @@ import Technologies from "@/Technologies";
 const App = () => {
   return (
     <div className="bg-primary/10 text-slate-100 min-h-screen font-sans selection:bg-cyan-500/30">
-      <SocialSidebar />
       <Container className="min-h-screen">
         <Navbar />
         <SectionWrapper id="about">
@@ -29,6 +28,7 @@ const App = () => {
           <h2 className="text-3xl font-bold mb-8 text-primary">Projects</h2>
           <Portfolio />
         </SectionWrapper>
+        <SocialSidebar />
       </Container>
     </div>
   );
