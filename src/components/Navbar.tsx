@@ -3,9 +3,12 @@ import Container from "@/components/Container";
 const Navbar = () => {
   return (
     <Container className="md:p-0">
-      <nav className="flex justify-ce flex-row md:flex-col gap-3 md:items-start items-center">
+      <nav
+        role="navigation"
+        className="flex justify-ce flex-row md:flex-col gap-3 md:items-start items-center"
+      >
         <img
-          src="/my-photo.png"
+          src="/my-photo.webp"
           height={"100"}
           width={"100"}
           alt="avatar"
