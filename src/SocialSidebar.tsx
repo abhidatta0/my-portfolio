@@ -1,4 +1,4 @@
-import { BookOpen } from "lucide-react";
+import { PenLine } from "lucide-react";
 import { motion } from "motion/react";
 
 const SocialSidebar = () => {
@@ -13,7 +13,7 @@ const SocialSidebar = () => {
         href="https://github.com/abhidatta0"
         target="_blank"
         rel="noreferrer"
-        className="text-slate-400 hover:text-cyan-400 transition-colors"
+        className="text-slate-400 hover:text-cyan-400 transition-colors group"
       >
         <img
           src="/images/github.svg"
@@ -22,12 +22,13 @@ const SocialSidebar = () => {
           width={40}
           height={40}
         />
+        <Tooltip text="Github" />
       </a>
       <a
         href="https://www.linkedin.com/in/abhirup-datta-a27036216"
         target="_blank"
         rel="noreferrer"
-        className="text-slate-400 hover:text-cyan-400 transition-colors"
+        className="text-slate-400 hover:text-cyan-400 transition-colors group relative"
       >
         <img
           src="/images/linkedin.svg"
@@ -36,6 +37,7 @@ const SocialSidebar = () => {
           width={40}
           height={40}
         />
+        <Tooltip text="Linkedin" />
       </a>
       <a
         href="https://abhirupdatta.hashnode.dev/"
@@ -43,12 +45,24 @@ const SocialSidebar = () => {
         target="_blank"
         className="text-slate-400 hover:text-cyan-400 transition-colors group relative"
       >
-        <BookOpen size={36} />
-        <span className="absolute left-10 bg-slate-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-          Read my Blogs
-        </span>
+        <PenLine
+          size={36}
+          className="text-slate-400 hover:text-cyan-400 transition-colors"
+        />
+        <Tooltip text="Read my Blogs" />
       </a>
     </motion.div>
+  );
+};
+
+interface TooltipProps {
+  text: string;
+}
+const Tooltip = ({ text }: TooltipProps) => {
+  return (
+    <span className="absolute left-15 top-0 bg-slate-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+      {text}
+    </span>
   );
 };
 
