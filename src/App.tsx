@@ -18,7 +18,7 @@ const App = () => {
       <Container className="min-h-screen">
         <Navbar />
         <SectionWrapper id="about">
-          <p className="md:text-xl text-sm text-slate-400 max-w-2xl leading-relaxed">
+          <p className="md:text-xl text-sm text-slate-700 max-w-2xl leading-relaxed tracking-normal">
             I am a results-driven Software Engineer with 6+ years of experience
             building scalable, high-performance web and mobile applications.
             Passionate about developer experience, clean component architecture,
