@@ -2,6 +2,7 @@ import Container from "@/components/Container";
 import Navbar from "@/components/Navbar";
 import SectionWrapper from "@/components/SectionWrapper";
 import Portfolio from "@/Portfolio";
+import { PromoBanner } from "@/PromoBanner";
 import SocialSidebar from "@/SocialSidebar";
 import Technologies from "@/Technologies";
 import { useScroll, motion } from "motion/react";
@@ -11,6 +12,7 @@ const App = () => {
 
   return (
     <div className="bg-primary/10 text-slate-100 min-h-screen font-sans selection:bg-cyan-500/30">
+      <PromoBanner />
       <motion.div
         style={{ scaleX: scrollYProgress }}
         className="bg-primary h-2 w-full origin-left fixed top-0 left-0 md:-p-6 rounded-r-3xl z-10"
