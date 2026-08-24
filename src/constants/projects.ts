@@ -22,4 +22,12 @@ export const PROJECTS = [
     videoUrl:
       "https://res.cloudinary.com/daxgfcpam/video/upload/v1767939832/Expense-tracker-demo_myrsqm",
   },
+  {
+    title: "Dime - a cross currency bill splitter",
+    description:
+      "Split a bill across currencies — everyone sees their share in their own",
+    liveLink: "https://dime.abhirupdatta.tech/",
+    videoUrl:
+      "https://res.cloudinary.com/daxgfcpam/video/upload/v1787570954/Screen_Recording_2026-08-24_at_4.55.56_PM_vgy4fa.mov",
+  },
 ];
