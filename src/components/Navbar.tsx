@@ -3,10 +3,7 @@ import Container from "@/components/Container";
 const Navbar = () => {
   return (
     <Container className="md:p-0">
-      <nav
-        role="navigation"
-        className="flex justify-ce flex-row gap-3 items-center"
-      >
+      <nav role="navigation" className="flex flex-row gap-3 items-center">
         <img
           src="/my-photo.webp"
           height={"100"}

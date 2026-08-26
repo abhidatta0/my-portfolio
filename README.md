@@ -1,20 +1,25 @@
-This is a "slimmed" down version of the vite boilerplate.
-It has no css and minimal tsx.   
+# Portfolio
 
-<b>Use this as base for your future React projects.Clone on!</b>
+Personal portfolio site — [abhirupdatta.tech](https://abhirupdatta.tech)
 
-✅ React 19.2
-✅ Typescript
-✅ Vite
-✅ Tailwind   
+Built with React 19, TypeScript, Vite, Tailwind CSS v4 and Motion.
 
-✅ Formatting Setup: ESLint, Prettier, Husky & Lint-staged
+## Getting started
 
-
-### The boilerplate uses "Kanit" as the font-family. You can change from `index.css` file
-
-## This repo is PNPM based. If NPM is needed, do the following:
+```bash
+pnpm i
+pnpm dev
 ```
-- Delete package-lock.json and node_modules(if already present) 
-- Run : pnpm i
-```
+
+## Scripts
+
+| Command | Description |
+| --- | --- |
+| `pnpm dev` | Start the dev server |
+| `pnpm build` | Type-check and build to `dist` |
+| `pnpm preview` | Serve the production build |
+| `pnpm lint` | Run ESLint |
+
+## Structure
+
+Content lives in `src/constants` — `projects.ts` for the project cards and `techstacks.ts` for the tech grid. Sections are composed in `src/App.tsx`.

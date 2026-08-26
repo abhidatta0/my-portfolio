@@ -28,12 +28,14 @@ const Portfolio = () => {
           <div className="p-6 flex-1">
             <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
             <p className="text-slate-400 text-sm mb-4">{project.description}</p>
-            <a
-              href={project.liveLink}
-              className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-medium"
-            >
-              Try it out <ExternalLink size={16} />
-            </a>
+            {project.liveLink && (
+              <a
+                href={project.liveLink}
+                className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-medium"
+              >
+                Try it out <ExternalLink size={16} />
+              </a>
+            )}
           </div>
         </motion.div>
       ))}

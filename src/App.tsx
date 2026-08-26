@@ -15,7 +15,7 @@ const App = () => {
       <PromoBanner />
       <motion.div
         style={{ scaleX: scrollYProgress }}
-        className="bg-primary h-2 w-full origin-left fixed top-0 left-0 md:-p-6 rounded-r-3xl z-10"
+        className="bg-primary h-2 w-full origin-left fixed top-0 left-0 md:p-3 rounded-r-3xl z-10"
       />
       <Container className="min-h-screen">
         <Navbar />
