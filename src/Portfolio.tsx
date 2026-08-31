@@ -26,7 +26,9 @@ const Portfolio = () => {
           </div>
 
           <div className="p-6 flex-1">
-            <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+            <h3 className="text-xl font-semibold mb-2 text-slate-100">
+              {project.title}
+            </h3>
             <p className="text-slate-400 text-sm mb-4">{project.description}</p>
             {project.liveLink && (
               <a

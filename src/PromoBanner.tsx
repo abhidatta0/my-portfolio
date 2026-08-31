@@ -14,7 +14,7 @@ export function PromoBanner() {
   };
 
   return (
-    <div className="flex items-center justify-center gap-3 bg-linear-to-r from-blue-500 to-cyan-400 text-white text-md py-2.5 px-4 relative">
+    <div className="flex items-center justify-center gap-3 bg-linear-to-r from-blue-500 to-cyan-400 text-slate-900 text-md py-2.5 px-4 relative">
       <a
         href="https://dime.abhirupdatta.tech"
         target="_blank"
@@ -32,7 +32,7 @@ export function PromoBanner() {
       <button
         onClick={handleDismiss}
         aria-label="Dismiss banner"
-        className="absolute right-3 top-1/2 -translate-y-1/2 text-white/80 hover:text-white "
+        className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-900/70 hover:text-slate-900 "
       >
         <X className="size-6" />
       </button>

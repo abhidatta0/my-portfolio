@@ -13,7 +13,7 @@ const SocialSidebar = () => {
         href="https://github.com/abhidatta0"
         target="_blank"
         rel="noreferrer"
-        className="text-slate-400 hover:text-cyan-400 transition-colors group"
+        className="text-slate-600 hover:text-cyan-700 transition-colors group"
       >
         <img
           src="/images/github.svg"
@@ -28,7 +28,7 @@ const SocialSidebar = () => {
         href="https://www.linkedin.com/in/abhirup-datta-a27036216"
         target="_blank"
         rel="noreferrer"
-        className="text-slate-400 hover:text-cyan-400 transition-colors group relative"
+        className="text-slate-600 hover:text-cyan-700 transition-colors group relative"
       >
         <img
           src="/images/linkedin.svg"
@@ -43,11 +43,11 @@ const SocialSidebar = () => {
         href="https://abhirupdatta.hashnode.dev/"
         rel="noreferrer"
         target="_blank"
-        className="text-slate-400 hover:text-cyan-400 transition-colors group relative"
+        className="text-slate-600 hover:text-cyan-700 transition-colors group relative"
       >
         <PenLine
           size={36}
-          className="text-slate-400 hover:text-cyan-400 transition-colors"
+          className="text-slate-600 hover:text-cyan-700 transition-colors"
         />
         <Tooltip text="Read my Blogs" />
       </a>

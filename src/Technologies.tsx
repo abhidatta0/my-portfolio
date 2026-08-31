@@ -11,7 +11,7 @@ const Technologies = () => {
               <div key={idx} className="group flex flex-col flex-1">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="p-3 bg-blue-50 rounded-lg group-hover:bg-primary transition-colors duration-300">
-                    <Icon className="w-6 h-6 text-primary group-hover:text-white transition-colors duration-300" />
+                    <Icon className="w-6 h-6 text-primary-strong group-hover:text-slate-900 transition-colors duration-300" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900">
                     {tech.category}

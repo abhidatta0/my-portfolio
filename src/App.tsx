@@ -11,7 +11,7 @@ const App = () => {
   const { scrollYProgress } = useScroll();
 
   return (
-    <div className="bg-primary/10 text-slate-100 min-h-screen font-sans selection:bg-cyan-500/30">
+    <main className="bg-primary/10 text-slate-800 min-h-screen font-sans selection:bg-cyan-500/30">
       <PromoBanner />
       <motion.div
         style={{ scaleX: scrollYProgress }}
@@ -29,17 +29,21 @@ const App = () => {
         </SectionWrapper>
 
         <SectionWrapper id="tech">
-          <h2 className="text-3xl font-bold mb-8 text-primary">Technologies</h2>
+          <h2 className="text-3xl font-bold mb-8 text-primary-strong">
+            Technologies
+          </h2>
           <Technologies />
         </SectionWrapper>
 
         <SectionWrapper id="projects">
-          <h2 className="text-3xl font-bold mb-8 text-primary">Projects</h2>
+          <h2 className="text-3xl font-bold mb-8 text-primary-strong">
+            Projects
+          </h2>
           <Portfolio />
         </SectionWrapper>
         <SocialSidebar />
       </Container>
-    </div>
+    </main>
   );
 };
 

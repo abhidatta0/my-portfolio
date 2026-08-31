@@ -11,7 +11,7 @@ const Navbar = () => {
           alt="avatar"
           className="size-15 rounded-full object-cover"
         />
-        <h1 className="text-3xl md:text-5xl font-bold bg-linear-to-r from-primary to-blue-500 bg-clip-text text-transparent tracking-tight">
+        <h1 className="text-3xl md:text-5xl font-bold bg-linear-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent tracking-tight">
           Hi, I am Abhirup
         </h1>
       </nav>
