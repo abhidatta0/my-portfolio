@@ -27,6 +27,8 @@ const Technologies = () => {
                       <img
                         src={skill.img}
                         alt={skill.name}
+                        width={48}
+                        height={48}
                         className="w-12 h-12 object-contain mb-2 group-hover/item:scale-110 transition-transform duration-300"
                         onError={(e) => {
                           e.currentTarget.style.display = "none";

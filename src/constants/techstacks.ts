@@ -47,7 +47,7 @@ export const TECH_STACK = [
       },
       {
         name: "Hono.js",
-        img: "https://raw.githubusercontent.com/honojs/hono/main/docs/images/hono-title.png",
+        img: "/images/tech/hono.webp",
       },
       {
         name: "PostgreSQL",
@@ -55,7 +55,7 @@ export const TECH_STACK = [
       },
       {
         name: "NeonDB",
-        img: "https://avatars.githubusercontent.com/u/77690634?s=280&v=4",
+        img: "/images/tech/neon.webp",
       },
     ],
   },
